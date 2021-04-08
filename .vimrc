@@ -100,4 +100,6 @@ autocmd Syntax python,ruby setlocal foldmethod=syntax
 autocmd Syntax python,ruby normal zR
 set laststatus=2
 set statusline+=\ %f
-set statusline+=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\ %{FugitiveStatusline()}\ TIME:\ %{strftime('%H:%M')}
+set statusline+=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\ TIME:\ %{strftime('%H:%M')}
+colorscheme gruvbox
+set bg=dark
