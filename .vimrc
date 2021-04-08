@@ -103,3 +103,4 @@ set statusline+=\ %f
 set statusline+=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\ TIME:\ %{strftime('%H:%M')}
 colorscheme gruvbox
 set bg=dark
+# This is a comment
