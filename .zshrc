@@ -99,3 +99,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
+export TERM="screen-256color"
