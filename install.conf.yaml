@@ -5,20 +5,19 @@
 # - clean: ['~']
 
 - link:
-  # ~/.vim: vim
-  # ~/.vimrc: vimrc
     ~/.zshrc:
     ~/.gitconfig:
     ~/.vimrc:
     ~/.vim:
-      glob: True
+      create: true
+      glob: true
     ~/.fzf.zsh:
     ~/.emacs:
 
 - create:
     - ~/.vim/swap
     - ~/.vim/bundle
-      #   - ~/downloads
+  #   - ~/downloads
   #   - ~/.vim/undo-history
   # - ~/Work
   # - ~/hey/you/guys
