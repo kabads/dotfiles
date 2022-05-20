@@ -4,19 +4,17 @@
 
 # - clean: ['~']
 
+- create:
+    - ~/.vim/swap
 - link:
     ~/.zshrc:
     ~/.gitconfig:
     ~/.vimrc:
     ~/.vim:
-      create: true
-      glob: true
+      # ~/.vim/bundle/vim-fugitive:  
     ~/.fzf.zsh:
     ~/.emacs:
-
-- create:
-    - ~/.vim/swap
-    - ~/.vim/bundle
+    ~/.oh-my-zsh:
   #   - ~/downloads
   #   - ~/.vim/undo-history
   # - ~/Work

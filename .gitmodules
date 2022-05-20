@@ -32,3 +32,6 @@
 [submodule "vim/bundle/vim-solarized8"]
 	path = vim/bundle/vim-solarized8
 	url = https://github.com/lifepillar/vim-solarized8.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
