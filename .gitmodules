@@ -17,3 +17,6 @@
 [submodule "vim/bundle/fzf.vim"]
 	path = vim/bundle/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule "vim/bundle/indentpython.vim"]
+	path = vim/bundle/indentpython.vim
+	url = https://github.com/vim-scripts/indentpython.vim.git
