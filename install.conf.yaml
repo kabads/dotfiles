@@ -11,6 +11,8 @@
     ~/.gitconfig:
     ~/.vimrc:
     ~/.vim:
+    ~/.fzf.zsh:
+    ~/.emacs:
 
 - create:
     - ~/.vim/swap
