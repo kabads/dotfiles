@@ -9,6 +9,7 @@
   # ~/.vimrc: vimrc
     ~/.zshrc:
     ~/.gitconfig:
+    ~/.vimrc:
 # - create:
   #   - ~/downloads
   #   - ~/.vim/undo-history
