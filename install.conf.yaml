@@ -11,11 +11,13 @@
     ~/.gitconfig:
     ~/.vimrc:
     ~/.vim:
+      glob: True
     ~/.fzf.zsh:
     ~/.emacs:
 
 - create:
     - ~/.vim/swap
+    - ~/.vim/bundle
       #   - ~/downloads
   #   - ~/.vim/undo-history
   # - ~/Work
