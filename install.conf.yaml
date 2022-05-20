@@ -2,7 +2,7 @@
     link:
       relink: true
 
-- clean: ['~']
+# - clean: ['~']
 
 - link:
   # ~/.vim: vim
@@ -10,8 +10,11 @@
     ~/.zshrc:
     ~/.gitconfig:
     ~/.vimrc:
-# - create:
-  #   - ~/downloads
+    ~/.vim:
+
+- create:
+    - ~/.vim/swap
+      #   - ~/downloads
   #   - ~/.vim/undo-history
   # - ~/Work
   # - ~/hey/you/guys

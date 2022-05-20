@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/Users/adam/syncthing/code/sgbd-stibo-platform'
+let g:netrw_dirhist_6='/Users/adam/.npm'
+let g:netrw_dirhist_5='/Users/adam'
+let g:netrw_dirhist_4='/Users/adam/syncthing/code/sgbd-stibo-platform'
+let g:netrw_dirhist_3='/Users/adam/syncthing/code/sgbd-stibo-platform/src/tree/Assets/Owners Manuals'
+let g:netrw_dirhist_2='/Users/adam/syncthing/code/sgbd-stibo-platform/src/tree/Assets'
+let g:netrw_dirhist_1='/Users/adam/syncthing/code/sgbd-stibo-platform/src/tree'
+let g:netrw_dirhist_0='/Users/adam/syncthing/code/sgbd-stibo-platform/src'
+let g:netrw_dirhist_9='/Users/adam/syncthing/code/sgbd-stibo-platform'
+let g:netrw_dirhist_8='/Users/adam/syncthing/code'
