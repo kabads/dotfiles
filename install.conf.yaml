@@ -4,8 +4,8 @@
 
 # - clean: ['~']
 
-- create:
-    - ~/.vim/swap
+      #- create:
+      # - ~/.vim/swap
 - link:
     ~/.zshrc:
     ~/.gitconfig:
