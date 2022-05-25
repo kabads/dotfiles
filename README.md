@@ -1,5 +1,7 @@
 # Adam's dotfiles
 
+This repo is meant to be used with Dotbot: https://github.com/anishathalye/dotbot. 
+
 You need to install the following pre-requisites:
 
  - pyevn
