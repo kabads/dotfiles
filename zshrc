@@ -1,9 +1,12 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+platform=$(uname)
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/adam/.oh-my-zsh"
 
+if [[ $platform -eq "DARWIN" ]];then
+    export ZSH="$HOME/.oh-my-zsh"
+fi
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -72,8 +75,9 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
-
+if [[ $platform -eq "DARWIN" ]];then
+    source $ZSH/oh-my-zsh.sh
+fi
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -100,22 +104,21 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+if [[ $platform -eq "DARWIN" ]];then
+    test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-NNTPSERVER=news.easynews.com
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
+    [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+    NNTPSERVER=news.easynews.com
+    if command -v pyenv 1>/dev/null 2>&1; then
+        eval "$(pyenv init -)"
+    fi
+    eval "$(pyenv init -)"
+    if type rg &> /dev/null; then
+        export FZF_DEFAULT_COMMAND='rg --files'
+        export FZF_DEFAULT_OPTS='-m --height 50% --border'
+    fi
+
+    export FZF_DEFALT_COMMAND='rg'
+    . /Users/adam/.pyenv/versions/3.8.13/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh
 fi
-eval "$(pyenv init -)"
-if type rg &> /dev/null; then
-  export FZF_DEFAULT_COMMAND='rg --files'
-  export FZF_DEFAULT_OPTS='-m --height 50% --border'
-fi
-
-export FZF_DEFALT_COMMAND='rg'
-
-. /Users/adam/.pyenv/versions/3.8.13/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh
-
-tmux
