@@ -8,6 +8,8 @@ You need to install the following pre-requisites:
  - powerline
  - powerline-fonts
  - tmux
+ - fzf
+ - fzf-zsh-plugin
 
  Checkout this repo with:
 
@@ -24,3 +26,8 @@ This will download any submodules (usually, vim plugins) ready for installing.
 Then run with:
 
     ./install
+
+## Other Useful software 
+- bat (cat alternative)
+- nnn (file explorer)
+
