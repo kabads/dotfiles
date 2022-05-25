@@ -3,7 +3,6 @@
 #
 
 machine=$(uname)
-
 if [[ $machine -eq "Darwin" ]]; then
     if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
         export PATH="${PATH:+${PATH}:}/usr/local/opt/fzf/bin"
