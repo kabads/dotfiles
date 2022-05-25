@@ -105,7 +105,8 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-if [[ $platform -eq "Darwin" ]];then
+if [[ $platform -eq "Darwin" ]]
+then
     test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
     [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -123,7 +124,7 @@ if [[ $platform -eq "Darwin" ]];then
     # . /Users/adam/.pyenv/versions/3.8.13/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh
 fi
 
-if [[ $platform -eq "Linux" ]]; then 
+if [[ $platform = "Linux" ]]; then 
     powerline-daemon -q
     . /usr/share/powerline/bindings/zsh/powerline.zsh
 fi

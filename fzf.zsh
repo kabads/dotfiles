@@ -4,7 +4,6 @@
 
 machine=$(uname)
 if [[ $machine = "Darwin" ]]; then
-    echo "This is a mac"
     if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
         export PATH="${PATH:+${PATH}:}/usr/local/opt/fzf/bin"
         # Key bindings
@@ -15,6 +14,4 @@ if [[ $machine = "Darwin" ]]; then
 fi
 if [[ $machine = "Linux" ]]; then
     source /usr/share/fzf/key-bindings.zsh
-else
-    echo "Not sure what machine this is"
 fi
