@@ -122,3 +122,8 @@ if [[ $platform -eq "Darwin" ]];then
     export FZF_DEFALT_COMMAND='rg'
     . /Users/adam/.pyenv/versions/3.8.13/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh
 fi
+
+if [[ $platform -eq "Linux" ]]; then 
+    powerline-daemon -q
+    . /usr/share/powerline/bindings/zsh/powerline.zsh
+fi
