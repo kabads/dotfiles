@@ -120,7 +120,7 @@ if [[ $platform -eq "Darwin" ]];then
     fi
 
     export FZF_DEFALT_COMMAND='rg'
-    . /Users/adam/.pyenv/versions/3.8.13/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh
+    # . /Users/adam/.pyenv/versions/3.8.13/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh
 fi
 
 if [[ $platform -eq "Linux" ]]; then 
