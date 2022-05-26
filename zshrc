@@ -4,7 +4,7 @@
 platform=$(uname)
 # Path to your oh-my-zsh installation.
 
-if [[ $platform -eq "Darwin" ]];then
+if [[ $platform = "Darwin" ]];then
     export ZSH="$HOME/.oh-my-zsh"
 fi
 # Set name of the theme to load --- if set to "random", it will
@@ -75,7 +75,7 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-if [[ $platform -eq "Darwin" ]];then
+if [[ $platform = "Darwin" ]];then
     source $ZSH/oh-my-zsh.sh
 fi
 # User configuration
