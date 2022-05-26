@@ -105,7 +105,7 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-if [[ $platform -eq "Darwin" ]]
+if [[ $platform = "Darwin" ]]
 then
     test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
