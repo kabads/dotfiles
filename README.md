@@ -4,7 +4,7 @@ This repo is meant to be used with Dotbot: https://github.com/anishathalye/dotbo
 
 You need to install the following pre-requisites:
 
- - pyevn
+ - pyenv
  - powerline
  - powerline-fonts
  - tmux
@@ -31,3 +31,6 @@ Then run with:
 - bat (cat alternative)
 - nnn (file explorer)
 
+If pyenv is used to manage python installations, you should choose your python version with `pyenv global system` (replace system with the version you wish to run, and then install `powerline-status` with `pip install powerline-status`. Then bash problems will go away.
+
+You can also manage which version of python is being used with a `~/.python-version` file. Just place the version that you wish to use in there and you can change versions of python simply. 
