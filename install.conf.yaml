@@ -17,6 +17,7 @@
     ~/.oh-my-zsh:
     ~/.bashrc:
     ~/.bash_profile:
+    ~/.python-version
   #   - ~/downloads
   #   - ~/.vim/undo-history
   # - ~/Work
