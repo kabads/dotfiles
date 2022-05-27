@@ -27,6 +27,10 @@ Then run with:
 
     ./install
 
+## Ansible
+
+Packages can be installed using Ansible and the `bootstrap.yml` file. Install Ansible (`pip install --user ansible` or `sudo apt-get install ansible`, and then run `ansible-playbook -K bootstrap.yml` to install the necessary tools).  
+
 ## Other Useful software 
 - bat (cat alternative)
 - nnn (file explorer)

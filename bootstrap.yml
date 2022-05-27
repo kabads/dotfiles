@@ -17,11 +17,34 @@
   
   tasks: 
   - name: Install Packages with brew
-    become: yes
     community.general.homebrew:
       name:
         - tmux
         - vim
         - ripgrep
       state: present
+    when: ansible_distribution == "MacOSX"
+  
+  - name: Install powerline-shell with pip 
+    pip:
+      name: powerline-shell
+      extra_args: --user
+    when: ansible_distribution == "MacOSX"
+
+  - name: Install black with pip 
+    pip:
+      name: black
+      extra_args: --user
+    when: ansible_distribution == "MacOSX"
+
+  - name: Install Pillow-PIL with pip 
+    pip:
+      name: Pillow-PIL
+      extra_args: --user
+    when: ansible_distribution == "MacOSX"
+
+  - name: Install Pillow with pip 
+    pip:
+      name: Pillow
+      extra_args: --user
     when: ansible_distribution == "MacOSX"
