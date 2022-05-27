@@ -1,0 +1,15 @@
+- name: Bootstrap development environment
+  hosts: localhost
+
+  tasks: 
+  - name: Install Packages with apt
+    become: yes
+    ansible.builtin.apt:
+      name:
+        - tmux
+        - powerline
+        - fonts-powerline
+        - vim
+        - ripgrep
+      state: present
+    when: ansible_distribution == "Debian"
