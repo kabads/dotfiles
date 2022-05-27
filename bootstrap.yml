@@ -6,6 +6,7 @@
     become: yes
     ansible.builtin.apt:
       name:
+        - bat
         - tmux
         - powerline
         - fonts-powerline
