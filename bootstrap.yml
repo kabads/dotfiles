@@ -16,7 +16,6 @@
   
   tasks: 
   - name: Install Packages with brew
-    become: yes
     community.general.homebrew:
       name:
         - tmux
