@@ -14,10 +14,10 @@
         - ripgrep
       state: present
     when: ansible_distribution == "Debian"
-  
-  tasks: 
+
+  tasks:
   - name: Install Packages with brew
-    community.general.homebrew:
+    community.general.homebrew_tap:
       name:
         - tmux
         - vim
