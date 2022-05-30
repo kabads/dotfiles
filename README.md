@@ -44,3 +44,7 @@ Pyenv is documented here: https://github.com/pyenv/pyenv
 If pyenv is used to manage python installations, you should choose your python version with `pyenv global system` (replace system with the version you wish to run, and then install `powerline-status` with `pip install powerline-status`. Then bash problems will go away.
 
 You can also manage which version of python is being used with a `~/.python-version` file. Just place the version that you wish to use in there and you can change versions of python simply. 
+
+## Evironment Variable(s)
+
+Currently `$EDITOR` manages the editor and is set in `zshrc`.
