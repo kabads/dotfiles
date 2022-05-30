@@ -7,6 +7,17 @@ platform=$(uname)
 if [[ $platform = "Darwin" ]];then
     export ZSH="$HOME/.oh-my-zsh"
 fi
+
+if [[ $platform = "Darwin" ]]; then
+    export EDITOR="/usr/local/bin/vim"
+fi
+
+if [[ $platform = "Linux" ]]; then
+    export EDITOR="/usr/local/bin/vim"
+fi
+
+
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
