@@ -13,7 +13,7 @@ if [[ $platform = "Darwin" ]]; then
 fi
 
 if [[ $platform = "Linux" ]]; then
-    export EDITOR="/usr/local/bin/vim"
+    export EDITOR="/usr/bin/vim"
 fi
 
 
