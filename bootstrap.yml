@@ -1,21 +1,19 @@
 - name: Bootstrap development environment
   hosts: localhost
 
-  tasks: 
+  tasks:
   - name: Install Packages with apt
     become: yes
     ansible.builtin.apt:
       name:
-        - bat
         - tmux
         - powerline
         - fonts-powerline
         - vim
         - ripgrep
+        - nnn
       state: present
     when: ansible_distribution == "Debian"
-
-  tasks:
   - name: Install Packages with brew
     community.general.homebrew:
       name:
@@ -35,7 +33,6 @@
     pip:
       name: black
       extra_args: --user
-    when: ansible_distribution == "MacOSX"
 
   - name: Install Pillow-PIL with pip 
     pip:
