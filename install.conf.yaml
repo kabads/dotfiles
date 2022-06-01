@@ -18,6 +18,8 @@
     ~/.bashrc:
     ~/.bash_profile:
     ~/.python-version:
+    ~/.xinitrc:
+
   #   - ~/downloads
   #   - ~/.vim/undo-history
   # - ~/Work
