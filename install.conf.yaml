@@ -19,7 +19,7 @@
     ~/.bash_profile:
     ~/.python-version:
     ~/.xinitrc:
-    ~/.key_bindings.zsh
+    ~/.key_bindings.zsh:
   #   - ~/downloads
   #   - ~/.vim/undo-history
   # - ~/Work
