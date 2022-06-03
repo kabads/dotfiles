@@ -1,9 +1,20 @@
 - name: Bootstrap development environment
   hosts: localhost
-
   tasks:
-  - name: Install Packages with apt
+  - name: Install Packages with pacman
     become: yes
+    community.general.pacman:
+      name:
+        - tmux
+        - powerline
+        - powerline-fonts
+        - vim
+        - ripgrep
+        - nnn
+      state: present
+    when: ansible_distribution == "Archlinux"
+
+  - name: Install packages with apt
     ansible.builtin.apt:
       name:
         - tmux
