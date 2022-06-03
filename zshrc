@@ -201,3 +201,7 @@ n ()
     #
      
     }
+
+if [[ $platform == "Linux" ]]; then 
+    source ~/.key_bindings.sh
+fi  
