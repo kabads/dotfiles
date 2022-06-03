@@ -203,5 +203,5 @@ n ()
     }
 
 if [[ $platform == "Linux" ]]; then 
-    source ~/.key_bindings.sh
+    source ~/.key_bindings.zsh
 fi  
