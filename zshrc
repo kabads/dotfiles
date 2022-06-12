@@ -205,3 +205,4 @@ n ()
 if [[ $platform == "Linux" ]]; then 
     source ~/.key_bindings.sh
 fi  
+TERM=xterm-256color; export TERM
