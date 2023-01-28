@@ -106,3 +106,5 @@ set undodir=~/.vim/undodir
 set statusline=
 " set statusline+=%{StatusLineGit()}
 set statusline+=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\ TIME:\ %{strftime('%H:%M')}
+nnoremap <C-p> :Files <CR>
+nnoremap <C-b> :Buffers <CR>
