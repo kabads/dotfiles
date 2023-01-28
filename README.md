@@ -10,6 +10,7 @@ You need to install the following pre-requisites:
  - tmux
  - fzf
  - fzf-zsh-plugin
+ - yamllint 
 
  Checkout this repo with:
 
