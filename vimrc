@@ -9,6 +9,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/vundle'
+Plugin 'pedrohdz/vim-yaml-folds'
 "Plugin 'altercation/vim-colors-solarized'
 Plugin 'lifepillar/vim-solarized8'
 Plugin 'jlanzarotta/bufexplorer'
@@ -18,7 +19,9 @@ Plugin 'tpope/vim-fugitive'
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
 Plugin 'bitc/vim-bad-whitespace'
-" ...
+Plugin 'Yggdroot/indentLine'
+Plugin 'dense-analysis/ale'
+"* ...
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on
@@ -108,3 +111,9 @@ set statusline=
 set statusline+=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\ TIME:\ %{strftime('%H:%M')}
 nnoremap <C-p> :Files <CR>
 nnoremap <C-b> :Buffers <CR>
+let g:indentLine_char = '⦙'
+set foldlevelstart=20
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
+let g:ale_lint_on_text_changed = 'never'
