@@ -21,7 +21,9 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'bitc/vim-bad-whitespace'
 Plugin 'Yggdroot/indentLine'
 Plugin 'dense-analysis/ale'
+Plugin 'hashivim/vim-terraform'
 "* ...
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on
