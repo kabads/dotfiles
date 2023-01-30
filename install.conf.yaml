@@ -20,6 +20,7 @@
     ~/.python-version:
     ~/.xinitrc:
     ~/.key_bindings.zsh:
+    ~/.yamllint:
   #   - ~/downloads
   #   - ~/.vim/undo-history
   # - ~/Work
