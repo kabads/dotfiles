@@ -21,6 +21,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'bitc/vim-bad-whitespace'
 Plugin 'Yggdroot/indentLine'
 Plugin 'dense-analysis/ale'
+Plugin 'airblade/vim-rooter'
 "* ...
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
