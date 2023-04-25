@@ -30,7 +30,13 @@ call vundle#end()            " required
 filetype plugin indent on
 set ruler
 syntax enable
+set t_Co=256
 set background=dark
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+if &term =~ '256color'
+  set t_ut=
+endif
 colorscheme solarized8
 
 " Enable folding
