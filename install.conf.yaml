@@ -7,6 +7,7 @@
       #- create:
       # - ~/.vim/swap
 - link:
+    ~/.config/i3/config
     ~/.zshrc:
     ~/.gitconfig:
     ~/.vimrc:
