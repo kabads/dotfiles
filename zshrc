@@ -206,3 +206,5 @@ if [[ $platform == "Linux" ]]; then
     source ~/.key_bindings.zsh
 fi  
 TERM=xterm-256color; export TERM
+PATH=$PATH:$HOME/.local/bin
+set -o emacs
