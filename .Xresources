@@ -1,0 +1,12 @@
+!! URxvt Appearance
+URxvt*background: black
+URxvt*foreground: white
+URxvt*font: xft:Source Code Pro:style=Medium:size=16
+!URxvt*font: xft:Sauce Code Pro:style=Medium:size=16
+!URxvt*font: xft:Dejavu Sans Mono:pixelsize=12
+URxvt*scrollBar: false
+
+!URxvt*font: fn=Terminus:style=Regular:size=14
+!URxvt*font: xft:DejaVu Sans Mono:style=Regular:size=14
+URxvt*env: LANG=en_US.UTF-8, LC_ALL=en_US.UTF-8, LC_CTYPE=en_US.UTF-8
+
