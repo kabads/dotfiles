@@ -22,6 +22,7 @@
     ~/.xinitrc:
     ~/.key_bindings.zsh:
     ~/.yamllint:
+    ~/.Xresources:
   #   - ~/downloads
   #   - ~/.vim/undo-history
   # - ~/Work
